@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.6.2/sass.min.js"
+            integrity="sha512-lmuNSGprTM9SdDQ8WuvkeGSgUn4R7jogp37VuQ8rrdNOSHQ9UDY9PF5f/gXjhMytuvxf3NADUXL+eb7K0DvIcw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          crossorigin="anonymous" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-unobtrusive/3.2.6/jquery.unobtrusive-ajax.min.js"
+            integrity="sha512-DedNBWPF0hLGUPNbCYfj8qjlEnNE92Fqn7xd3Sscfu7ipy7Zu33unHdugqRD3c4Vj7/yLv+slqZhMls/4Oc7Zg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Входное задание</title>
+</head>
+<body>
+<div class="input-container">
+    <div class="input-container__title">
+        Задать вопрос
+    </div>
+    <form class="input-container__form">
+        <input type="text" id="fio" required placeholder="Фамилия Имя Отчество *"/>
+        <input type="tel" id="phone" required placeholder="Телефон *"/>
+        <input type="email" id="email" required placeholder="Email"/>
+        <button type="submit">Отправить запрос</button>
+    </form>
+    <div class="input-container__result" id="res"></div>
+</div>
+
+<script defer type="text/javascript" src="main.js"></script>
+</body>
+</html>
