@@ -32,7 +32,7 @@ $('.input-container__form').submit(async function (e) {
     const values = getValidValues()
     // блок try-catch с отправкой запроса
     try {
-        const response = await fetch('https://60376bfd5435040017722533.mockapi.io/formRej', {
+        const response = await fetch('https://60376bfd5435040017722533.mockapi.io/form', {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
